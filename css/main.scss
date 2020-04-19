@@ -1,0 +1,36 @@
+$dark-blue: #0375b4;
+$orange: #e37222;
+$medium-blue: #17a2b8;
+$dark: #262228;
+
+.bg-dark-blue {
+  background: $dark-blue;
+}
+.color-orange{
+  color: $orange
+}
+.bg-orange{
+  background-color: $orange
+}
+// .bg-orange {
+//   background: $orange;
+// }
+
+
+img.img-thumbnail {
+  border-width: 3px !important;
+  width: 50%;
+}
+
+.w300 {
+  max-width: 300px;
+  height: auto;
+}
+
+.min-vh-80 {
+  min-height: 80vh;
+}
+
+.text-small {
+  font-size: 0.9rem;
+}

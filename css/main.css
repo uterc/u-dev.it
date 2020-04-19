@@ -1,0 +1,30 @@
+.bg-dark-blue {
+  background: #0375b4;
+}
+
+.color-orange {
+  color: #e37222;
+}
+
+.bg-orange {
+  background-color: #e37222;
+}
+
+img.img-thumbnail {
+  border-width: 3px !important;
+  width: 50%;
+}
+
+.w300 {
+  max-width: 300px;
+  height: auto;
+}
+
+.min-vh-80 {
+  min-height: 80vh;
+}
+
+.text-small {
+  font-size: 0.9rem;
+}
+/*# sourceMappingURL=main.css.map */
