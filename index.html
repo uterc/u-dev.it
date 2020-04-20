@@ -3,8 +3,13 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta name="theme-color" content="#0375b4">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Freelance developer</title>
+  <title>Web developer</title>
+  <script src="https://kit.fontawesome.com/d09e2596ac.js" crossorigin="anonymous"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Permanent+Marker&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
   <link rel="stylesheet" href="./css/main.css" />
@@ -13,7 +18,7 @@
 <body class=".bg-light">
   <nav class="fixed-top shadow-sm navbar row navbar-expand-md bg-dark-blue navbar-dark">
     <!-- Brand -->
-    <a class="navbar-brand h6 col-9" href="#"><small>U-dev.it</small></a>
+    <a class="navbar-brand h6 font-marker col-9" href="#">U-dev.it</a>
 
     <!-- Toggler/collapsibe Button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -29,25 +34,25 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Chi sono</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" href="#">Contatti</a>
-        </li>
+        </li> -->
       </ul>
     </div>
   </nav>
   <div class="container pb-5 mt-5">
     <div id="section1" class="mt-5 bg-gradient-light pt-5">
-      <h1 class="text-center h1 color-orange ">Diamo vita insieme alle tue idee</h1>
+      <h1 class="text-center h2 color-orange font-marker">Insieme diamo vita<br>alle tue idee</h1>
       <div class="row container mx-auto pt-5">
         <div class="col-lg-6 col-md-12 mx-auto">
           <img id="header-img" src="img/man-1459246.png" class="m-1 w300 d-block mx-auto" alt="foto viso" />
         </div>
         <div class="col-lg-6 col-md-12">
-          <p class="pt-5">
-            Sviluppo Siti web e Web-app, se sei un privato o un azienda e
-            cerchi qualcuno che ti aiuti con tuo progetto...
+          <p class="pt-2 pb-2 text-center text-xl-left">
+            Sviluppo Applicazioni o Siti Web per soddisfare le tue necessità.
+            Parlami della tua idea e vediamo insieme come possiamo implementarla
           </p>
-          <a class="btn py-3 py-lg-2 px-lg-4 shadow-sm mx-auto mt-3 text-light d-block d-md-inline text-center bg-orange"
+          <a class="btn py-3 py-lg-2 px-lg-4 shadow-sm mx-auto mt-3 text-light d-block d-md-inline text-center bg-dark-blue"
             href="tel:+393277376208">Chiamami</a>
         </div>
       </div>
@@ -58,215 +63,236 @@
 
   <div id="servizi" class="container-fluid bg-dark-blue text-light pt-5 mt-5 ">
     <h3 class="h5 text-center">Ecco alcune cose che potrei fare per te:</h3>
-    <div id="card-row" class=".container-fluid d-flex flex-wrap justify-content-center p-5 ">
-      <div class="col-xl-2 col-md-4 col-12 card m-2">
+    <div id="card-row" class=".container-fluid d-flex flex-wrap justify-content-center pt-5 pb-5 ">
+      <div class="w300 font-lato card m-2">
         <img src="./img/static.jpg" class="card-img-top" alt="..." />
         <div class="card-body">
-          <h6 class="text-dark">Implementazione script in JAVASCRIPT o PHP per su prodotti già
-            essistenti</h6>
+          <h6 class="text-dark font-900">Implementazione script in JAVASCRIPT o PHP</h6>
           <p class="card-text text-dark">
-            <small>Se hai necesità di aggiungere funzionalità extra e non sai da dove comminciare possiamo vedere
-              insieme quale e la strategia migliore!</small></p>
+            <small class="font-400">Aggiungo funzionalità extra (chat, form contatti, animazioni,etc...) al sito web in
+              base alle tue necessità</small></p>
         </div>
       </div>
-      <div class="col-xl-2 col-sm-3 col-md-4 col-12 card m-2">
+      <div class="w300 font-lato  card m-2">
         <img src="./img/wordpress.jpg" class="card-img-top" alt="..." />
         <div class="card-body">
-          <h6 class="text-dark">Sviluppo e personalizzazione Sito o Blog in wordpress</h6>
+          <h6 class="text-dark font-900">Sviluppo sito dinamico (wordpress)</h6>
           <p class="card-text text-dark">
-            <small>WordPress è un Content Management System che ti permette di gestire un blog (o sito web) con
-              estrema facilità. E una buona soluzione nella maggior parte dei casi per attività piccole e medie
-              atività in quanto la maggior parte della logica e scritta.In questo modo si risparmia molti soldi sullo
-              sviluppo </small></p>
+            <small class="font-400"> Installo e personalizzo wordpress con tutte le funzionalità necessarie in maniera
+              professionale</small></p>
         </div>
       </div>
-      <div class="col-xl-2 col-sm-3 col-md-4 col-12 card m-2">
+      <div class="w300 font-lato card m-2">
         <img src="./img/shop.jpg" class="card-img-top" alt="..." />
         <div class="card-body">
-          <h6 class="text-dark">E-comerce per piccole e medie attività</h6>
+          <h6 class="text-dark font-900">E-comerce</h6>
           <p class="card-text text-dark">
-            <small>
-              Se vuoi implementare un ecommerce per ampliare la tua attività oppure vuoi aprire un attività di vendita e
-              non sei sicuro quale e il metodo migliore per te?
+            <small class="font-400">
+              Cerchiamo insieme la soluzione migliore per iniziare a vendere i tuoi prodotti online in maniera veloce e
+              affidabile
             </small>
           </p>
         </div>
       </div>
-      <div class="col-xl-2 col-sm-3 col-md-4 col-12 card m-2">
-        <img src="./img/landing.jpg" class="card-img-top" alt="..." />
+      <div class="w300 font-lato card m-2">
+        <img src="./img/landing.jpg" class="card-img-top " alt="..." />
         <div class="card-body">
-          <h6 class="text-dark">Siti web statici (di presentazione)</h6>
+          <h6 class="text-dark font-900">Sito Web statico</h6>
           <p class="card-text text-dark">
-            <small>A volte un sito statico e una buona idea se l'unica cosa che ti serve e presentare la tua attività
-              con contatti </small>
-          </p>
-        </div>
-      </div>
-      <div class="col-xl-2 col-sm-3 col-md-4 col-12 card m-2">
-        <img src="./img/pwa.jpg" class="card-img-top img-fluid" alt="..." />
-        <div class="card-body">
-          <h6 class="text-dark">Web-app con PWA</h6>
-          <p class="card-text text-dark"><small>
-              Some quick example text to build on the card title and make up
-              the bulk of the card's content.
-            </small>
+            <small class="font-400">Un sito statico e una buona scelta se ti serve solo per consultazione senza
+              necessità di modificare spesso i contenuti</small>
           </p>
         </div>
       </div>
     </div>
   </div>
   <div class="container-fluid pt-5">
-    <section class="container d-flex flex-wrap align-content-around">
-      <div class="col-12 col-lg-8 ">
-        <div class="mt-5">
-          <img src="img/io.jpg" class="img-thumbnail m-3 rounded-circle border-primary d-block mx-auto"
-            alt="foto viso" />
+    <section class="container row mx-auto align-content-around">
+      <div class="col-12 col-lg-9 ">
+        <div class="row">
+          <div class="col-12 col-lg-5">
+            <img src="img/io.jpg" class="img-thumbnail rounded-circle border-primary d-block mx-auto" alt="foto viso" />
+          </div>
+          <div class="col-12 col-lg-7 d-flex justify-content-center align-items-center">
+            <div class="">
+              <h1 class="h4">Chi sono</h1>
+              <p>Ciao mi chiamo Cretu Laurentiu Adrian ho 34 anni e sono sposato con due bambini.Ho un forte interesse
+                per la tecnologia
+                e su come usarla per aiutare le persone.Quando non lavoro mi piace passare il tempo a leggere e a
+                giocare con i miei
+                figli.</p>
+              <h1 class="h4">I miei contatti</h1>
+              <p><a href="tel:cretu.laurentiu@gmail.com"><i class="fas fa-mobile-alt mr-2"></i>+39 327-7376208</a></p>
+              <p><a href="mailto:cretu.laurentiu@gmail.com"><i
+                    class="far fa-envelope mr-2"></i>cretu.laurentiu@gmail.com</a></p>
+            </div>
+          </div>
         </div>
-        <div>
-        <p>Ciao mi chiamo Cretu Laurentiu Adrian ho 34 anni e sono uno Svilupatore web.Ho un forte interesse per la
-          tecnologia e su come usarla per aiutare le persone a risolvere determinati problemmi.</p>
-        <h1 class="h4">Questo e il mio percorso formativo (anche da autodidatta)</h1>
-        <p>
-          Ho frequentato un corso biennale di grafica pubblicitaria di cui impaginazione, fotoritocco, grafica
-          vettoriale
-          e stampa.
-        </p>
-        <p>
-          Ho frequentato l’istituto professionale “Calegari” per tre anni con specializzazione in elettrica,
-          elettrotecnica ed elettronica
-        </p>
-        <p>
-          Ho commiciato a studiare il <strong class="">responsive web design</strong> da un bellissimo libro chiamato 'Principi di web design' per
-          avere le basi e poi ho proseguito prendendo un corso completo su udemy chiamato <strong>The web developer Bootcamp</strong>
-          aprofondendo le tecnologie essenziale per lo sviluppo web.
-        </p>
-        <p>
-          A questo punto ero sempre piu affamato e ho iniziato ad studiare Javascript a un livello piu avanzato e
-          comminciato a creare piccoli script comminciano a studiare le pratiche migliori (best practices), i vari framework (jquery ,vue.js) e aprofondire
-          la programazione ad oggetti.</p>
-        <p>
-          ho continuato ad aprofondire i vari campi colegati alla programazione web (http, DOM ,prototipi, polifyll,
-          etc...) e mi sono dedicato a Php 7 come linguaggio Lato server.
-          Ho studiado le basi su Udemy ('PHP 7: La guida completa per sviluppatori web') e leggendo 'Svilupare siti
-          dinamici con php e mysql' per poi fare un corso avanzato su Jobformazione.it di Php OOP (object oriented
-          programming)
-          Alla fine ho preso 2 certificazioni su Freecodecamp.org :
-          - Responsive Web Design
-          - JavaScript Algorithms and Data Structures
-        </p>
+        <div class="border-bottom mt-5">
+        </div>
+        <h1 class="h4 text-center mt-5 mb-5">Il mio percorso formativo</h1>
+        <div class="position-relative">
+          <div class="timeline">
+            <div class="cont left">
+              <div class="content">
+                <!-- <h2>2004</h2> -->
+                <p>
+                  Ho frequentato l’istituto professionale “Callegari” con specializzazione in elettrica, ed elettronica.
+                </p>
+              </div>
+            </div>
+            <div class="cont right">
+              <div class="content">
+                <!-- <h2>2012</h2> -->
+                <p>
+                  Ho frequentato un corso biennale di grafica pubblicitaria di cui impaginazione, foto ritocco e stampa.
+                </p>
+              </div>
+            </div>
+            <div class="cont left">
+              <div class="content">
+                <!-- <h2>2012</h2> -->
+                <p>
+                  Ho cominciato a studiare il <strong class="">Responsive design</strong> da un bellissimo libro (Principi di web design)
+                  per poi frequentare un corso completo su <strong>Udemy.com</strong> intitolato <strong>The web developer
+                    Bootcamp</strong> approfondendo tutto l'essenziale per sviluppare Siti e Applicazioni.
+                </p>
+              </div>
+            </div>
+            <div class="cont right">
+              <div class="content">
+                <!-- <h2>2012</h2> -->
+                <p>
+                  A questo punto studiare JavaScript(ES6) a un livello più avanzato e diventato un obbligo per creare script usando
+                  pratiche migliori (best practices),Ho quindi frequentando un corso completo "Modern JavaScript from the begining" e
+                  cominciato a utilizzare qualche framework (Jquery, Vue.js) approfondendo la programmazione ad oggetti.</p>
+                <p>Continuando ad approfondire i vari campi collegati alla programmazione web (http, DOM, prototipi, polifyll, etc...) e mi
+                sono dedicato a Php 7 come linguaggio Lato server.</p>
+              </div>
+            </div>
+            <div class="cont left">
+              <p class="content">
+                <!-- <h2>2012</h2> -->
+                <p>
+                  Dopo aver approfondito le basi su Udemy ('PHP 7: La guida completa per sviluppatori web') e leggendo 'Sviluppare
+                  siti dinamici con Php e MySQL' mi sono inscritto e frequentato un corso avanzato su Jobformazione.it di Php OOP.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-12 col-lg-4">
-        <h3 class="h4 mt-5 mb-5">
-          Progetto esperienze usando queste tecnologie:
-        </h3>
-        <p>Lato client:</p>
-        <ul class="list-inline mb-5">
-          <li class="pt-2">
-            HTML5:
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 85%;" aria-valuenow="85"
-                aria-valuemin="0" aria-valuemax="100">
-                85%
-              </div>
-            </div>
-          </li>
-          <li class="pt-2">
-            CSS3:
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 70%;" aria-valuenow="85"
-                aria-valuemin="0" aria-valuemax="100">
-                70%
-              </div>
-            </div>
-          </li>
-          <li class="pt-2">
-            Javascript:
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%;" aria-valuenow="80"
-                aria-valuemin="0" aria-valuemax="100">
-                80%
-              </div>
-            </div>
-          </li>
-          <li class="pt-2">
-            Bootstrap:
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 60%;" aria-valuenow="60"
-                aria-valuemin="0" aria-valuemax="100">
-                60%
-              </div>
-            </div>
-          </li>
-          <li class="pt-2">
-            Jquery:
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 35%;" aria-valuenow="35"
-                aria-valuemin="0" aria-valuemax="100">
-                35%
-              </div>
-            </div>
-          </li>
-          <li class="pt-2">
-            Vue.js per SPA (single page application):
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 75%;" aria-valuenow="75"
-                aria-valuemin="0" aria-valuemax="100">
-                75%
-              </div>
-            </div>
-          </li>
-          <li class="pt-2">
-            Wordpress:
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 75%;" aria-valuenow="75"
-                aria-valuemin="0" aria-valuemax="100">
-                75%
-              </div>
-            </div>
-          </li>
-        </ul>
-        <p>Lato server:</p>
-        <ul class="list-inline">
-          <li class="pt-2">
-            Php 7:
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 45%;" aria-valuenow="45"
-                aria-valuemin="0" aria-valuemax="100">
-                45%
-              </div>
-            </div>
-          </li>
-          <li class="pt-2">
-            Node.js:
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 35%;" aria-valuenow="35"
-                aria-valuemin="0" aria-valuemax="100">
-                35%
-              </div>
-            </div>
-          </li>
-          <li class="pt-2">
-            Mysql:
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 65%;" aria-valuenow="65"
-                aria-valuemin="0" aria-valuemax="100">
-                65%
-              </div>
-            </div>
-          </li>
-          <li class="pt-2">
-            Mongo Db:
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 25%;" aria-valuenow="25"
-                aria-valuemin="0" aria-valuemax="100">
-                25%
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <!-- <blockquote class="blockquote bg-info rounded p-3 text-secondary"><small class="text-light text-small"><i>Ogni
+  <div class="col-12 col-lg-3 sm-remove-border border-left">
+    <h3 class="h4 mt-5 mb-5">
+      Progetto esperienze usando queste tecnologie:
+    </h3>
+    <p>Lato client:</p>
+    <ul class="list-inline mb-5">
+      <li class="pt-2">
+        HTML5:
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 85%;" aria-valuenow="85"
+            aria-valuemin="0" aria-valuemax="100">
+            85%
+          </div>
+        </div>
+      </li>
+      <li class="pt-2">
+        CSS3:
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 70%;" aria-valuenow="85"
+            aria-valuemin="0" aria-valuemax="100">
+            70%
+          </div>
+        </div>
+      </li>
+      <li class="pt-2">
+        Javascript:
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%;" aria-valuenow="80"
+            aria-valuemin="0" aria-valuemax="100">
+            80%
+          </div>
+        </div>
+      </li>
+      <li class="pt-2">
+        Bootstrap:
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 60%;" aria-valuenow="60"
+            aria-valuemin="0" aria-valuemax="100">
+            60%
+          </div>
+        </div>
+      </li>
+      <li class="pt-2">
+        Jquery:
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 35%;" aria-valuenow="35"
+            aria-valuemin="0" aria-valuemax="100">
+            35%
+          </div>
+        </div>
+      </li>
+      <li class="pt-2">
+        Vue.js per SPA (single page application):
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 75%;" aria-valuenow="75"
+            aria-valuemin="0" aria-valuemax="100">
+            75%
+          </div>
+        </div>
+      </li>
+      <li class="pt-2">
+        Wordpress:
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 75%;" aria-valuenow="75"
+            aria-valuemin="0" aria-valuemax="100">
+            75%
+          </div>
+        </div>
+      </li>
+    </ul>
+    <p>Lato server:</p>
+    <ul class="list-inline">
+      <li class="pt-2">
+        Php 7:
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 45%;" aria-valuenow="45"
+            aria-valuemin="0" aria-valuemax="100">
+            45%
+          </div>
+        </div>
+      </li>
+      <li class="pt-2">
+        Node.js:
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 35%;" aria-valuenow="35"
+            aria-valuemin="0" aria-valuemax="100">
+            35%
+          </div>
+        </div>
+      </li>
+      <li class="pt-2">
+        Mysql:
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 65%;" aria-valuenow="65"
+            aria-valuemin="0" aria-valuemax="100">
+            65%
+          </div>
+        </div>
+      </li>
+      <li class="pt-2">
+        Mongo Db:
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 25%;" aria-valuenow="25"
+            aria-valuemin="0" aria-valuemax="100">
+            25%
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <!-- <blockquote class="blockquote bg-info rounded p-3 text-secondary"><small class="text-light text-small"><i>Ogni
             azienda ha
             bisogno di una forte
             presenza online,di far
@@ -276,10 +302,10 @@
             ai clienti di interagire nel modo piu rapido ed efficente. Trovare direttamente i contatti, cercare
             informazione
             sui prodotti</i></small></blockquote> -->
-    </section>
+  </section>
 
 
-    <!-- <div id="section2" class="container-fluid min-vh-100 bg-secondary min-vw'">
+  <!-- <div id="section2" class="container-fluid min-vh-100 bg-secondary min-vw'">
     
     
     </div>
@@ -307,18 +333,18 @@
         - JavaScript Algorithms and Data Structures
       </div>
     </div> -->
-    <footer class="container-fluid pr-0 pl-0 bg-medium-blue">
+  <footer class="container-fluid pr-0 pl-0 bg-medium-blue">
 
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"></script>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
