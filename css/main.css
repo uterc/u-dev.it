@@ -1,5 +1,5 @@
 .font-lato {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .font-900 {
@@ -11,7 +11,7 @@
 }
 
 .font-marker {
-  font-family: 'Permanent Marker', cursive;
+  font-family: "Permanent Marker", cursive;
 }
 
 .bg-dark-blue {
@@ -45,6 +45,10 @@ img.img-thumbnail {
   font-size: 0.9rem;
 }
 
+section#footer {
+  height: 110px;
+}
+
 @media (max-width: 767px) {
   .sm-remove-border {
     border: 0px solid !important;
@@ -59,7 +63,7 @@ img.img-thumbnail {
 
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 6px;
   background-color: #0375b4;
@@ -79,7 +83,7 @@ img.img-thumbnail {
 
 /* The circles on the timeline */
 .cont::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 25px;
   height: 25px;
