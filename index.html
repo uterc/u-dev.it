@@ -39,18 +39,34 @@
   </nav>
   <div class="container pb-5 mt-5">
     <div id="section1" class="mt-5 bg-gradient-light pt-5">
-      <h1 class="text-center h2 color-orange font-marker">Insieme diamo vita<br>alle tue idee</h1>
+      <h1 class="text-center h2 color-orange font-marker">Insieme diamo vita<br class="d-block d-lg-none">alle tue idee</h1>
       <div class="row container mx-auto pt-5">
         <div class="col-lg-6 col-md-12 mx-auto">
           <img id="header-img" src="img/man-1459246.png" class="m-1 w300 d-block mx-auto" alt="foto viso" />
+          <p class="d-none d-sm-block">Sviluppo Applicazioni o Siti Web con cura e attenzione ai dettagli.
+          Parlami della tua idea e vediamo insieme come possiamo implementarla</p>
         </div>
         <div class="col-lg-6 col-md-12">
-          <p class="pt-2 pb-2 text-center text-xl-left">
-            Sviluppo Applicazioni o Siti Web per soddisfare le tue necessità.
-            Parlami della tua idea e vediamo insieme come possiamo implementarla
-          </p>
-          <a class="btn py-3 py-lg-2 px-lg-4 shadow-sm mx-auto mt-3 text-light d-block d-md-inline text-center bg-dark-blue"
-            href="tel:+393277376208">Chiamami</a>
+          <div>
+              <form form id="my-form"
+  action="https://formspree.io/xeqlyagk"
+  method="POST" class="d-none rounded text-white d-sm-block bg-dark-blue p-4"> 
+              <div class="form-group">
+                <label for="my-form">Email address</label>
+                <input type="email" name="email" class="form-control " id="my-form" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-white ">La tua email serve per poterti rispondere...Nessun dato verrà salvato</small>
+              </div>
+              <div class="form-group">
+                <label for="textarea">Contenuto messaggio</label>
+                <textarea class="form-control" name="message" id="textarea"></textarea>
+              </div>
+              <button  class="btn btn-warning" class="my-form-button">Submit</button>
+              <p id="my-form-status" class="text-white"></p>
+              </form>
+            <a class="d-block d-lg-none btn py-3 py-lg-2 px-lg-4 shadow-sm mx-auto mt-3 text-light d-block d-md-inline text-center bg-dark-blue"
+              href="tel:+393277376208">Chiamami</a>
+
+          </div>
         </div>
       </div>
     </div>
@@ -293,6 +309,7 @@
     <section id="footer" class="container-fluid bg-dark-blue ">
       
     </section>
+    <script src="js/email.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
