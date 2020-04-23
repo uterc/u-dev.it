@@ -39,26 +39,26 @@
   </nav>
   <div class="container pb-5 mt-5">
     <div id="section1" class="mt-5 bg-gradient-light pt-5">
-      <h1 class="text-center h2 color-orange font-marker">Insieme diamo vita<br class="d-block d-lg-none">alle tue idee</h1>
+      <h1 class="text-center h2 color-orange font-marker">Insieme diamo vita <br class="d-block d-lg-none">alle tue idee</h1>
       <div class="row container mx-auto pt-5">
         <div class="col-lg-6 col-md-12 mx-auto">
           <img id="header-img" src="img/man-1459246.png" class="m-1 w300 d-block mx-auto" alt="foto viso" />
-          <p class="d-none d-sm-block">Sviluppo Applicazioni o Siti Web con cura e attenzione ai dettagli.
-          Parlami della tua idea e vediamo insieme come possiamo implementarla</p>
+          <p class="d-block h6 pt-5 d-sm-none">Sviluppo Applicazioni o Siti Web con cura e attenzione ai dettagli.
+            Parlami della tua idea e vediamo insieme la strateggia migliore per implementarla</p>
         </div>
         <div class="col-lg-6 col-md-12">
-          <div>
+          <div >
               <form form id="my-form"
   action="https://formspree.io/xeqlyagk"
-  method="POST" class="d-none rounded text-white d-sm-block bg-dark-blue p-4"> 
+  method="POST" class="d-none shadow rounded text-white d-sm-block bg-dark-blue p-4"> 
               <div class="form-group">
-                <label for="my-form">Email address</label>
-                <input type="email" name="email" class="form-control " id="my-form" aria-describedby="emailHelp">
-                <small id="emailHelp" class="form-text text-white ">La tua email serve per poterti rispondere...Nessun dato verrà salvato</small>
+                <!-- <label for="my-form">Email address</label> -->
+                <input type="email" name="email" placeholder="Inserisci la tua email" class="form-control " id="my-form" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-white ">La tua email serve per poterti rispondere... Nessun dato verrà salvato</small>
               </div>
               <div class="form-group">
-                <label for="textarea">Contenuto messaggio</label>
-                <textarea class="form-control" name="message" id="textarea"></textarea>
+                <!-- <label for="textarea">Contenuto messaggio</label> -->
+                <textarea class="form-control" placeholder="Fammi sapere quello che ti serve..." name="message" id="textarea"></textarea>
               </div>
               <button  class="btn btn-warning" class="my-form-button">Submit</button>
               <p id="my-form-status" class="text-white"></p>
@@ -70,6 +70,9 @@
         </div>
       </div>
     </div>
+    <p class="d-none d-sm-block h6 pt-5">
+      Sviluppo Applicazioni o Siti Web con cura e attenzione ai dettagli.
+      Parlami della tua idea e vediamo insieme la strateggia migliore per implementarla</p>
   </div>
 
 
@@ -307,7 +310,10 @@
   </div>
 </section>
     <section id="footer" class="container-fluid bg-dark-blue ">
-      
+      <p class="text-white">
+          Questo sito non contiene alcun tipo di cookie essendo statico, lo scopo e semplicemente di farmi conoscere e mettermi in
+          contatto con persone interessate a una collaborazione.
+      </p>
     </section>
     <script src="js/email.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
