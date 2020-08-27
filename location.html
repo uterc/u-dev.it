@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="startLat"></p>
+  <p id="startLon"></p>
+  <p id="city"></p>
+  <script>
+    window.onload = function () {
+        var startPos;
+        var geoSuccess = function (position) {
+          startPos = position;
+          const lat = startPos.coords.latitude;
+          const lon = startPos.coords.longitude;
+          const siteToRequest = 'https://api.opencagedata.com/geocode/v1';
+          const returnDataFormat = '/json?q=';
+          const ApyKey = '&key=73e9fbd8ad4e4789b4c3810de92c1f90';
+          fullRequest = siteToRequest + returnDataFormat + lat + '+' + lon + ApyKey;
+          fetch(fullRequest).then(data => data.json()).then(coords =>{
+            document.getElementById('city').innerHTML ='Stai guardando questa pagina da : ' + coords.results[0].components.county;
+            console.log(coords.results[0].components.county);
+          })
+        };
+        navigator.geolocation.getCurrentPosition(geoSuccess);
+      };
+  </script>
+</body>
+</html>
