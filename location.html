@@ -26,7 +26,22 @@
           })
         };
         var goError = function(error){
-          document.getElementById('city').innerHTML = error;
+          let msg = '';
+          switch(error.code){
+            case 0 :
+              msg = 'errore sconosciuto';
+              break;
+             case 1 :
+              msg = 'permesso negato';
+              break;
+             case 2 :
+              msg = 'positione non disponibile';
+              break;
+               case 4 :
+              msg = 'ci ha messo troppo tempo';
+              break;
+          }
+          document.getElementById('city').innerHTML = msg;
         }
 
         navigator.geolocation.getCurrentPosition(geoSuccess,goError);
