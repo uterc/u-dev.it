@@ -21,7 +21,7 @@
           const ApyKey = '&key=73e9fbd8ad4e4789b4c3810de92c1f90';
           fullRequest = siteToRequest + returnDataFormat + lat + '+' + lon + ApyKey;
           fetch(fullRequest).then(data => data.json()).then(coords =>{
-            document.getElementById('city').innerHTML ='Stai guardando questa pagina da : ' + coords.results[0].components.county;
+            document.getElementById('city').innerHTML ='Stai guardando questa pagina da : ' + coords.results[0].components.village;
             console.log(coords.results[0].components.county);
           })
         };
