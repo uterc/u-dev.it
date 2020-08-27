@@ -10,7 +10,7 @@
   <p id="startLon"></p>
   <p id="city"></p>
   <script>
-    window.onload = function () {
+       window.onload = function () {
         var startPos;
         var geoSuccess = function (position) {
           startPos = position;
@@ -25,7 +25,11 @@
             console.log(coords.results[0].components.county);
           })
         };
-        navigator.geolocation.getCurrentPosition(geoSuccess);
+        var goError = function(error){
+          document.getElementById('city').innerHTML = error;
+        }
+
+        navigator.geolocation.getCurrentPosition(geoSuccess,goError);
       };
   </script>
 </body>
