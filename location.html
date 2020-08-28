@@ -12,6 +12,10 @@
   <script>
        window.onload = function () {
         var startPos;
+         var options = {
+          enableHighAccuracy: false,
+           maximumAge: 5000
+         };
         var geoSuccess = function (position) {
           startPos = position;
           const lat = startPos.coords.latitude;
@@ -44,7 +48,7 @@
           document.getElementById('city').innerHTML = msg;
         }
 
-        navigator.geolocation.getCurrentPosition(geoSuccess,goError);
+        navigator.geolocation.getCurrentPosition(geoSuccess,goError,options);
       };
   </script>
 </body>
