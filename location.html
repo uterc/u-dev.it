@@ -26,7 +26,7 @@
           fullRequest = siteToRequest + returnDataFormat + lat + '+' + lon + ApyKey;
           fetch(fullRequest).then(data => data.json()).then(coords =>{
             const location = coords.results[0].components.village || 'non riesco a capire dove sei';
-            document.getElementById('city').innerHTML = 'Stai guardando questa pagina da : ' + location;
+            document.getElementById('city').innerHTML = 'Stai guardando questa pagina da : ' + `Latitudine:${lat} </br> Longitudine: ${lon}`;
             console.log(coords.results[0].components.county);
           })
         };
