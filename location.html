@@ -32,7 +32,6 @@
             const location = coords.results[0].components.village || 'non riesco a capire dove sei';
             document.getElementById('city').innerHTML = 'Stai guardando questa pagina da : ' + `Latitudine:${lat} </br> Longitudine: ${lon}`;
             console.log(coords.results[0].components.county);
-            initMap();
           })
         };
         var goError = function(error){
