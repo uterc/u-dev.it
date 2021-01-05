@@ -46,7 +46,7 @@
               msg = 'ci ha messo troppo tempo';
               break;
           }
-          document.getElementById('city').innerHTML = msg;
+          document.getElementById('city').innerHTML =`Latitudine:${lat} </br> Longitudine: ${lon}`;
         }
 
         navigator.geolocation.getCurrentPosition(geoSuccess,goError,options);
