@@ -26,7 +26,7 @@
         Notification.requestPermission(function (result) {
             if (result === 'granted') {
                 navigator.serviceWorker.ready.then(function (registration) {
-                    registration.showNotification(title, options);
+                   setInterval(registration.showNotification(title, options),1000);
                 });
             }
         });
