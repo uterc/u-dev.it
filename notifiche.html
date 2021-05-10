@@ -7,55 +7,55 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="notifyMe()">Notify me!</button>
-    <script>
+<!--     <button onclick="notifyMe()">Notify me!</button>
+    <script> -->
 
-        const img = "/images/jason-leung-HM6TMmevbZQ-unsplash.jpg";
-        const text = "Take a look at this brand new t-shirt!";
-        const title = "New Product Available";
-        const options = {
-            body: text,
-            icon: "/images/jason-leung-HM6TMmevbZQ-unsplash.jpg",
-            vibrate: [200, 100, 200],
-            tag: "new-product",
-            image: img,
-            badge: "https://spyna.it/icons/android-icon-192x192.png",
-            actions: [{ action: "Detail", title: "View", icon: "https://via.placeholder.com/128/ff0000" }]
-        };
-        navigator.serviceWorker.register('sw.js');
-        Notification.requestPermission(function (result) {
-            if (result === 'granted') {
-                navigator.serviceWorker.ready.then(function (registration) {
-                   setInterval(registration.showNotification(title, options),1000);
-                });
-            }
-        });
-        function notifyMe() {
-            // Let's check if the browser supports notifications
-            if (!("Notification" in window)) {
-                alert("This browser does not support desktop notification");
-            }
+//         const img = "/images/jason-leung-HM6TMmevbZQ-unsplash.jpg";
+//         const text = "Take a look at this brand new t-shirt!";
+//         const title = "New Product Available";
+//         const options = {
+//             body: text,
+//             icon: "/images/jason-leung-HM6TMmevbZQ-unsplash.jpg",
+//             vibrate: [200, 100, 200],
+//             tag: "new-product",
+//             image: img,
+//             badge: "https://spyna.it/icons/android-icon-192x192.png",
+//             actions: [{ action: "Detail", title: "View", icon: "https://via.placeholder.com/128/ff0000" }]
+//         };
+//         navigator.serviceWorker.register('sw.js');
+//         Notification.requestPermission(function (result) {
+//             if (result === 'granted') {
+//                 navigator.serviceWorker.ready.then(function (registration) {
+//                    setInterval(registration.showNotification(title, options),1000);
+//                 });
+//             }
+//         });
+//         function notifyMe() {
+//             // Let's check if the browser supports notifications
+//             if (!("Notification" in window)) {
+//                 alert("This browser does not support desktop notification");
+//             }
 
-            // Let's check whether notification permissions have already been granted
-            else if (Notification.permission === "granted") {
-                // If it's okay let's create a notification
-                var notification = new Notification("Hi there!");
-            }
+//             // Let's check whether notification permissions have already been granted
+//             else if (Notification.permission === "granted") {
+//                 // If it's okay let's create a notification
+//                 var notification = new Notification("Hi there!");
+//             }
 
-            // Otherwise, we need to ask the user for permission
-            else if (Notification.permission !== "denied") {
-                Notification.requestPermission().then(function (permission) {
-                    // If the user accepts, let's create a notification
-                    if (permission === "granted") {
-                        var notification = new Notification("Hi there!");
-                    }
-                });
-            }
+//             // Otherwise, we need to ask the user for permission
+//             else if (Notification.permission !== "denied") {
+//                 Notification.requestPermission().then(function (permission) {
+//                     // If the user accepts, let's create a notification
+//                     if (permission === "granted") {
+//                         var notification = new Notification("Hi there!");
+//                     }
+//                 });
+//             }
 
-            // At last, if the user has denied notifications, and you
-            // want to be respectful there is no need to bother them any more.
-        }
+//             // At last, if the user has denied notifications, and you
+//             // want to be respectful there is no need to bother them any more.
+//         }
 
-    </script>
+<!--     </script> -->
 </body>
 </html>
