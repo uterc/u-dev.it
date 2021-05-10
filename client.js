@@ -27,6 +27,7 @@ async function send() {
   console.log("Sending Push...");
   await fetch("https://notify-lory.herokuapp.com/subscribe", {
     method: "POST",
+    mode: "no-cors",
     body: JSON.stringify(subscription),
     headers: {
       "content-type": "application/json"
