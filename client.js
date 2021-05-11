@@ -18,6 +18,7 @@ async function send() {
   // Register Push
   console.log("Registering Push...");
   const subscription = await register.pushManager.subscribe({
+    endPoint: 'https://www.u-dev.it/push.html',
     userVisibleOnly: true,
     applicationServerKey: urlBase64ToUint8Array(publicVapidKey)
   });
