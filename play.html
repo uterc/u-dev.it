@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+</head>
+<html>
+
+<body>
+
+  <p>Click the button to open a new window, and assure that the new window GETS focus (send the new window to the
+    front).</p>
+
+  <button onclick="myFunction()">Try it</button>
+
+  <script>
+    function myFunction() {
+      var myWindow = window.open("", "", "width=200,height=100");
+      myWindow.document.write("<p>A new window!</p>");
+      myWindow.focus();
+      const audio = document.createElement('audio');
+      audio.src = './note.mp3';
+      audio.play()
+      setTimeout(_ => myWindow.close(), 2000)
+    }
+
+    setTimeout(()=> $('button').click() ,3000)
+  </script>
+
+</body>
+
+</html>
